@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import hellocucumber.Actionwords;
 
 public class StepDefinitions {
-    private Actionwords actionwords = new Actionwords();
+    public Actionwords actionwords = new Actionwords();
 
     @Given("^entered value$")
     public void enteredValue() {
