@@ -5,6 +5,8 @@ before_install:
   - rvm use 2.2
   - gem install hiptest-publisher
 #  - "hiptest-publisher -c java-cucumber.conf --token=$ST --test-run-id=183497"
+  - hiptest-publisher --config=java-cucumber.conf --token=$ST --test-run-id=183497 --without=actionwords
+
 script: mvn test
 after_script:
 - hiptest-publisher -c java-cucumber.conf --token=$ST --push="target/surefire-reports/TEST-hellocucumber.RunCucumberTest.xml" --test-run-id=183497
