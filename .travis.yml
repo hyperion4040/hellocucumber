@@ -1,4 +1,10 @@
 language: java
 jdk: openjdk8
-install: mvn install
+before_install:
+  - rvm install 2.2
+  - rvm use 2.2
+  - gem install hiptest-publisher
+  - "hiptest-publisher -c cucumber-java.conf --token=$ST --only=features,step_definitions --test-run-id=183497"
 script: mvn test
+after_script:
+- hiptest-publisher -c cucumber-java.conf --token=$ST --push=target/cuke-results.json --test-run-id=183497
