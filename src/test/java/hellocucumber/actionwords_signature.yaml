@@ -1,0 +1,17 @@
+---
+- name: entered value
+  uid: 9fdf1c4b-d7bb-43dc-a82e-79d0465e84ef
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: value is positive
+  uid: c6565a26-0f0a-4418-b553-0fe874497936
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: returned values is positive
+  uid: 7e63c1d6-9aaa-4ae1-aefd-bb91263bbb38
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
+- name: value is negative
+  uid: c5879930-17a1-4d06-8325-78cc9df39d87
+  parameters: []
+  body_hash: d41d8cd98f00b204e9800998ecf8427e
