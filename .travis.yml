@@ -7,4 +7,4 @@ before_install:
 #  - "hiptest-publisher -c java-cucumber.conf --token=$ST --test-run-id=183497"
 script: mvn test
 after_script:
-- hiptest-publisher -c java-cucumber.conf --token=$ST --push=target/cuke-results.json --test-run-id=183497
+- hiptest-publisher -c java-cucumber.conf --token=$ST --push=results/results.json --test-run-id=183497
